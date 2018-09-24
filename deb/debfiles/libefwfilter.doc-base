@@ -1,0 +1,10 @@
+Document: libefwfilter
+Title: libEFWFilter SDK Manual
+Author: ZWO
+Abstract: How to use the libEFWFilter SDK
+Section: Science/Astronomy
+
+Format: PDF
+Files: /usr/share/doc/libefwfilter/*.pdf*
+
+
