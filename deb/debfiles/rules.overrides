@@ -1,7 +1,7 @@
 
 override_dh_auto_build:
 	dh_auto_build -- LIBDIR=/usr/lib/$(DEB_HOST_MULTIARCH) VERSION=DEBVERSION
-	chmod -x demo/*.* demo/Makefile
+	chmod -x demo/c/*.* demo/c/Makefile
 
 override_dh_auto_install:
 	dh_auto_install -- SRCDIR=$(CURDIR) ARCH=$(DEB_TARGET_ARCH) \

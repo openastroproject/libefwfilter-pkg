@@ -13,8 +13,8 @@ quiltconf=$HOME/.quiltrc-dpkg
 mkdir $srcdir
 cd $srcdir
 tar zxf ../libefwfilter-$version.tar.gz
-chmod -x demo/*.*
-chmod -x demo/Makefile
+chmod -x demo/c/*.*
+chmod -x demo/c/Makefile
 dh_make -y -l -f ../libefwfilter-$version.tar.gz
 
 cp ../debfiles/control $debdir
