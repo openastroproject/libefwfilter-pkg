@@ -11,7 +11,7 @@ Homepage: http://astronomy-imaging-camera.com/
 Package: libefwfilter
 Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
-Depends: ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: ZWO filter wheel interface library
  Userspace library for connecting to ZWO filter wheels
 

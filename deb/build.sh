@@ -48,7 +48,7 @@ sed -e "s/DEBVERSION/$version/g" < ../debfiles/rules.overrides >> $debdir/rules
 rm $debdir/README.Debian
 rm $debdir/README.source
 rm $debdir/libefwfilter-docs.docs
-rm $debdir/libefwfilter.*
+rm $debdir/libefwfilter1.*
 rm $debdir/*.[Ee][Xx]
 
 
