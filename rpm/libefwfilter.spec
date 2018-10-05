@@ -41,7 +41,7 @@ sed -e "s!@LIBDIR@!%{_libdir}!g" -e "s!@VERSION@!%{version}!g" < \
 %install
 mkdir -p %{buildroot}%{_libdir}/pkgconfig
 mkdir -p %{buildroot}%{_includedir}
-mkdir -p %{buildroot}%{_docdir}/%{name}-%{version}/demo
+mkdir -p %{buildroot}%{_docdir}/%{name}-%{version}/demo/c
 mkdir -p %{buildroot}/etc/udev/rules.d
 
 case %{_arch} in
@@ -65,8 +65,8 @@ cp *.pc %{buildroot}%{_libdir}/pkgconfig
 cp doc/* %{buildroot}%{_docdir}/%{name}-%{version}
 cp license.txt %{buildroot}%{_docdir}/%{name}-%{version}
 cp lib/README.txt %{buildroot}%{_docdir}/%{name}-%{version}
-cp demo/Makefile %{buildroot}%{_docdir}/%{name}-%{version}/demo
-cp demo/*.* %{buildroot}%{_docdir}/%{name}-%{version}/demo
+cp demo/c/Makefile %{buildroot}%{_docdir}/%{name}-%{version}/demo/c
+cp demo/c/*.* %{buildroot}%{_docdir}/%{name}-%{version}/demo/c
 cp 70-asi-fw.rules %{buildroot}/etc/udev/rules.d
 
 %post
@@ -87,8 +87,8 @@ cp 70-asi-fw.rules %{buildroot}/etc/udev/rules.d
 %{_libdir}/pkgconfig/%{name}*.pc
 %{_libdir}/*.a
 %{_docdir}/%{name}-%{version}/*.pdf
-%{_docdir}/%{name}-%{version}/demo/Makefile
-%{_docdir}/%{name}-%{version}/demo/*.*
+%{_docdir}/%{name}-%{version}/demo/c/Makefile
+%{_docdir}/%{name}-%{version}/demo/c/*.*
 
 %changelog
 * Thu Sep 25 2018 James Fidell <james@openastroproject.org> - 0.3.1205-0
