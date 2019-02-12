@@ -39,11 +39,9 @@ cp ../debfiles/libefwfilter-dev.examples $debdir
 echo 10 > $debdir/compat
 
 sed -e '/^.*[ |]configure./a\
-        ldconfig\
 	udevadm control --reload-rules || true' < $debdir/postinst.ex > $debdir/postinst
 chmod +x $debdir/postinst
 sed -e '/^.*[ |]remove./a\
-        ldconfig\
 	udevadm control --reload-rules || true' < $debdir/postrm.ex > $debdir/postrm
 chmod +x $debdir/postrm
 echo "3.0 (quilt)" > $debsrc/format
