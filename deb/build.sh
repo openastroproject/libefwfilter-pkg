@@ -29,7 +29,6 @@ cp ../debfiles/changelog $debdir
 cp ../debfiles/docs $debdir
 cp ../debfiles/watch $debdir
 cp ../debfiles/libefwfilter.dirs $debdir
-cp ../debfiles/libefwfilter.links $debdir
 cp ../debfiles/libefwfilter.install $debdir
 cp ../debfiles/libefwfilter.symbols $debdir
 cp ../debfiles/libefwfilter.doc-base $debdir
@@ -80,4 +79,4 @@ dpkg-buildpackage -us -uc
 
 echo "Now run:"
 echo
-echo "    lintian -i -I --show-overrides libefwfilter_$version-1_amd64.changes"
+echo "    lintian -i -I --show-overrides libefwfilter_$version-2_amd64.changes"
