@@ -1,3 +1,4 @@
+Create the udev rules file for the ASI filter wheel
 --- 70-asi-fw.rules	1970-01-01 01:00:00.000000000 +0100
 +++ 70-asi-fw.rules	2018-09-25 00:18:43.247858211 +0000
 @@ -0,0 +1,26 @@
