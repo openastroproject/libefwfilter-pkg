@@ -27,4 +27,4 @@ Create the udev rules file for the ASI filter wheel
 +#
 +
 +# There is only one
-+ATTR{idVendor}=="03c3" ATTR{idProduct}=="1f01" GROUP="users", MODE="0666"
++ATTR{idVendor}=="03c3" ATTR{idProduct}=="1f01" TAG+="uaccess"
