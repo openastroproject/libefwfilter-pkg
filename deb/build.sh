@@ -32,6 +32,7 @@ cp ../debfiles/libefwfilter.dirs $debdir
 cp ../debfiles/libefwfilter.install $debdir
 cp ../debfiles/libefwfilter.symbols $debdir
 cp ../debfiles/libefwfilter.doc-base $debdir
+cp ../debfiles/libefwfilter.triggers $debdir
 cp ../debfiles/libefwfilter-dev.dirs $debdir
 cp ../debfiles/libefwfilter-dev.install $debdir
 cp ../debfiles/libefwfilter-dev.examples $debdir
