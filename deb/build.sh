@@ -37,7 +37,7 @@ cp ../debfiles/libefwfilter-dev.dirs $debdir
 cp ../debfiles/libefwfilter-dev.install $debdir
 cp ../debfiles/libefwfilter-dev.examples $debdir
 
-echo 9 >> $debdir/compat
+echo 10 >> $debdir/compat
 
 sed -e '/^.*[ |]configure./a\
         ldconfig\
