@@ -2,7 +2,7 @@
 
 Name:           libefwfilter
 Version:        0.3.1205
-Release:        0
+Release:        1
 Summary:        ZWO filter wheel SDK
 License:        expat
 URL:            http://astronomy-imaging-camera.com/
@@ -91,6 +91,6 @@ cp 70-asi-fw.rules %{buildroot}/etc/udev/rules.d
 %{_docdir}/%{name}-%{version}/demo/c/*.*
 
 %changelog
-* Thu Sep 25 2018 James Fidell <james@openastroproject.org> - 0.3.1205-0
+* Thu Sep 25 2018 James Fidell <james@openastroproject.org> - 0.3.1205-1
 - Initial RPM release
 
