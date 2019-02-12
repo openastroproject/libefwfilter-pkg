@@ -5,7 +5,7 @@ Create the udev rules file for the ASI filter wheel
 +#
 +# 70-asi-fw.rules -- Udev rules for ZWO ASI filter wheel
 +#
-+# Copyright 2018 James Fidell (james@openastroproject.org)
++# Copyright 2018,2019 James Fidell (james@openastroproject.org)
 +#
 +# License:
 +#
