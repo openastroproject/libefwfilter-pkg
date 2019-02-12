@@ -36,7 +36,7 @@ cp ../debfiles/libefwfilter-dev.dirs $debdir
 cp ../debfiles/libefwfilter-dev.install $debdir
 cp ../debfiles/libefwfilter-dev.examples $debdir
 
-echo 10 >> $debdir/compat
+echo 10 > $debdir/compat
 
 sed -e '/^.*[ |]configure./a\
         ldconfig\
@@ -79,4 +79,4 @@ dpkg-buildpackage -us -uc
 
 echo "Now run:"
 echo
-echo "    lintian -i -I --show-overrides libefwfilter_$version-2_amd64.changes"
+echo "    lintian -i -I --show-overrides libefwfilter_$version-3_amd64.changes"
