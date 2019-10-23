@@ -24,6 +24,8 @@ case $debversion in
 esac
 echo $compatversion > debfiles/compat
 
+cp ../patches/*.patch debfiles/patches
+
 mkdir $srcdir
 cd $srcdir
 tar zxf ../libefwfilter-$version.tar.gz
