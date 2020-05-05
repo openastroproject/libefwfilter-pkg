@@ -93,4 +93,4 @@ dpkg-buildpackage -us -uc
 
 echo "Now run:"
 echo
-echo "    lintian -i -I --show-overrides libefwfilter_$version-3_amd64.changes"
+echo "    lintian -i -I --show-overrides libefwfilter_$version-1_amd64.changes"
