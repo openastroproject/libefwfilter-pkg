@@ -26,9 +26,8 @@ echo $compatversion > debfiles/compat
 
 cp ../patches/*.patch debfiles/patches
 
-mkdir $srcdir
-cd $srcdir
 tar zxf ../libefwfilter-$version.tar.gz
+cd $srcdir
 chmod -x demo/c/*.*
 chmod -x demo/c/Makefile
 YFLAG=-y
@@ -37,7 +36,7 @@ if [ $? -eq 0 ]
 then
   YFLAG=''
 fi
-dh_make $YFLAG -l -f ../libefwfilter-$version.tar.gz
+dh_make $YFLAG -l -f ../../libefwfilter-$version.tar.gz
 
 sed -e "s/@@COMPAT@@/$compatversion/" < ../debfiles/control > $debdir/control
 cp ../debfiles/copyright $debdir

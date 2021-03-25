@@ -1,5 +1,5 @@
-libefwfilter (0.4.1022-1) bionic; urgency=medium
+libefwfilter (1.6-1) bionic; urgency=medium
 
   * Initial release
 
- -- James Fidell <james@openastroproject.org>  Sun, 19 Jan 2020 19:21:00 +0100
+ -- James Fidell <james@openastroproject.org>  Thu, 25 Mar 2021 21:37:00 +0000
