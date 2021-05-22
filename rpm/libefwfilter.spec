@@ -1,14 +1,14 @@
 %define debug_package %{nil}
 
 Name:           libefwfilter
-Version:        1.6
+Version:        1.7
 Release:        1
 Summary:        ZWO filter wheel SDK
 License:        expat
 URL:            http://astronomy-imaging-camera.com/
 Prefix:         %{_prefix}
 Provides:       libefwfilter = %{version}-%{release}
-Obsoletes:      libefwfilter < 1.6
+Obsoletes:      libefwfilter < 1.7
 Requires:       libusbx
 Source:         libefwfilter-%{version}.tar.gz
 Patch0:         pkg-config.patch
@@ -22,7 +22,7 @@ Summary:        Development files for %{name}
 Group:          Development/Libraries
 Requires:       %{name}%{?_isa} = %{version}-%{release}
 Provides:       libefwfilter-devel = %{version}-%{release}
-Obsoletes:      libefwfilter-devel < 1.6
+Obsoletes:      libefwfilter-devel < 1.7
 
 %description    devel
 The %{name}-devel package contains libraries and header files for
@@ -91,6 +91,6 @@ cp 70-asi-fw.rules %{buildroot}/etc/udev/rules.d
 %{_docdir}/%{name}-%{version}/demo/c/*.*
 
 %changelog
-* Thu Mar 25 2021 James Fidell <james@openastroproject.org> - 1.6-1
+* Thu May 20 2021 James Fidell <james@openastroproject.org> - 1.7-1
 - Initial RPM release
 
